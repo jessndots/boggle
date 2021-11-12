@@ -1,0 +1,74 @@
+#title {
+    width: 70%;
+}
+h1 {
+    margin-left: 5px;
+    font-size: 50px;
+}
+#boggle {
+    width: 90%;
+    max-width: 500px;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+
+}
+td {
+    width: 20%;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid gold;
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+td:after {
+    content: '';
+    display: block;
+    margin-top: 40%;
+}
+td:before {
+    content: '';
+    display: block;
+    margin-top: 40%;
+}
+
+.msg-ok {
+    background-color: rgb(183, 255, 183);
+    color: darkgreen;
+}
+
+.msg-err {
+    background-color: pink;
+    color: darkred;
+}
+
+#msg {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 725px;
+}
+
+#box {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#score {
+    padding-right: 20px;
+}
+
+#form {
+    padding-left: 20px;
+}
+
+

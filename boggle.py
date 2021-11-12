@@ -22,9 +22,45 @@ class Boggle():
         """Make and return a random boggle board."""
 
         board = []
+        letter_freq = {
+            'E': 56,
+            'A': 43,
+            'R': 39,
+            'I': 38,
+            'O': 37,
+            'T': 35,
+            'N': 34,
+            'S': 29,
+            'L': 28,
+            'C': 23,
+            'U': 19,
+            'D': 17,
+            'P': 16,
+            'M': 15,
+            'H': 15,
+            'G': 13,
+            'B': 11,
+            'F': 9,
+            'Y': 9,
+            'W': 7,
+            'K': 6,
+            'V': 5,
+            'X': 1,
+            'Z': 1,
+            'J': 1,
+            'Q': 1
+        }
+
+        letters = []
+
+        for (ltr, freq) in letter_freq.items():
+            for i in range(freq): 
+                letters.append(ltr)
+            
+        
 
         for y in range(5):
-            row = [choice(string.ascii_uppercase) for i in range(5)]
+            row = [choice(letters) for i in range(5)]
             board.append(row)
 
         return board
